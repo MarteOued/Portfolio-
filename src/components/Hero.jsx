@@ -96,7 +96,7 @@ const Hero = () => {
             >
               <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
                 <Database size={20} className="text-primary" />
-                <span className="text-lg font-semibold text-white">Data Scientist</span>
+                <span className="text-lg font-semibold text-white">Data Scientist Junior</span>
               </div>
               <div className="text-2xl text-white/40">×</div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10">
@@ -156,7 +156,7 @@ const Hero = () => {
             >
               {[
                 { Icon: Linkedin, href: "https://www.linkedin.com/in/marte-oued-5b1192325", label: "LinkedIn" },
-                { Icon: Github, href: "https://github.com/MartineOuedraogo", label: "GitHub" },
+                { Icon: Github, href: "https://github.com/MarteOued", label: "GitHub" },
                 { Icon: Mail, href: "mailto:martoued11@gmail.com", label: "Email" },
               ].map(({ Icon, href, label }) => (
                 <motion.a
@@ -225,8 +225,8 @@ const Hero = () => {
                 <div className="relative h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl p-1 backdrop-blur-sm">
                   <div className="h-full bg-black rounded-3xl overflow-hidden">
                     <img 
-                      src="/projects/I3.jpeg"
-                      alt="Martine - Data Scientist"
+                      src="/projects/MARTEI.jpeg"
+                      alt="Martine - Data Scientist Junior"
                       className="w-full h-full object-cover"
                     />
                   </div>
