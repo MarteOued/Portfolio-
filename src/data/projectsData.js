@@ -7,7 +7,7 @@ export const projectsData = [
     category: "Full-Stack",
     media: {
       type: "video",
-      url: "/projects/PLANINGVIDEO.mp4",
+      url:"https://www.youtube.com/embed/S6byfQvaLzY",
       thumbnail: "/projects/PLANINIG.png" 
     },
     description: "Application temps réel pour l'estimation agile en équipe. Système de vote par cartes avec rôles PM/Joueurs distincts, gestion de session multi-joueurs et interface responsive.",
@@ -42,7 +42,7 @@ export const projectsData = [
     category: "Python / NLP",
     media: {
       type: "video",
-      url: "/projects/MOTEUR-IA.mp4",
+      url: "https://www.youtube.com/embed/40vuFwfoOAA",
       thumbnail: "/projects/moteur.png"
 
     },
@@ -77,7 +77,7 @@ export const projectsData = [
     category: "Machine Learning",
     media: {
       type: "video",
-      url: "/projects/PREDICTIONS.mp4",
+      url: "https://www.youtube.com/embed/mGdXvJoOIKA",
       thumbnail: "/projects/predictions.png"
     },
     description: "Modèle ML pour orienter 200+ étudiants vers l'enseignement supérieur avec 87% de précision. Analyse de 5000+ observations avec Random Forest, Logistic Regression et RNN.",
@@ -114,7 +114,7 @@ export const projectsData = [
     category: "Full-Stack",
     media: {
       type: "video",
-      url: "/projects/PARADISE.mp4",
+      url: "https://www.youtube.com/embed/m1KQmbto6oo",
       thumbnail: "/projects/I2.jpg",
       thumbnail: "/projects/i1.jpg"
     },

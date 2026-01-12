@@ -1,7 +1,7 @@
 // src/components/Projects.jsx
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, X, ExternalLink, Github, Award, Calendar, Users, Zap, ChevronRight } from 'lucide-react';
+import { Play, X, Award, Calendar, Users, Zap, ChevronRight } from 'lucide-react';
 import { projectsData } from '../data/projectsData';
 
 const Projects = () => {
@@ -118,30 +118,15 @@ const Projects = () => {
                   {/* Gradient Glow Effect */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 blur-2xl`} />
                   
-                  {/* Media Section */}
+                  {/* Media Section - Thumbnail only */}
                   <div className="relative h-72 overflow-hidden">
-                    {project.media.type === 'video' ? (
-                      <video
-                        src={project.media.url}
-                        poster={project.media.thumbnail}
-                        className="w-full h-full object-cover"
-                        muted
-                        loop
-                        onMouseEnter={(e) => e.target.play()}
-                        onMouseLeave={(e) => {
-                          e.target.pause();
-                          e.target.currentTime = 0;
-                        }}
-                      />
-                    ) : (
-                      <img
-                        src={project.media.thumbnail}
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
-                    )}
+                    <img
+                      src={project.media.thumbnail}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
                     
-                    {/* Overlay with Icon */}
+                    {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60" />
                     
                     {/* Category Badge */}
@@ -269,14 +254,16 @@ const Projects = () => {
                   </p>
                 </div>
 
-                {/* Video */}
+                {/* YouTube Video - iframe avec ratio 16:9 */}
                 {selectedProject.media.type === 'video' && (
-                  <div className="relative mb-8 rounded-2xl overflow-hidden border border-white/20">
-                    <video
+                  <div className="relative mb-8 rounded-2xl overflow-hidden border border-white/20" style={{ paddingBottom: '56.25%', height: 0 }}>
+                    <iframe
                       src={selectedProject.media.url}
-                      controls
-                      className="w-full"
-                      poster={selectedProject.media.thumbnail}
+                      title={selectedProject.title}
+                      className="absolute top-0 left-0 w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
                     />
                   </div>
                 )}
