@@ -159,5 +159,5 @@ export const contact = {
   phone: "+33 617501027",
   location: "Lyon, France",
   linkedin: "marte-oued-5b1192325",
-  github: "MartineOuedraogo" // Adapte avec ton vrai GitHub
+  github: "https://github.com/MarteOued" // Adapte avec ton vrai GitHub
 };
